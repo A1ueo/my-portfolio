@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sungjae's Portfolio</title>
+
+  <!-- 오픈 그래프 -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Sungjae's Portfolio" />
+  <meta property="og:title" content="Sungjae's Portfolio" />
+  <meta property="og:description" content="포트폴리오 연습 사이트 입니다." />
+  <meta property="og:image" content="https:// /images/open_graph.png" />
+  <meta property="og:url" content="https://" />
+
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+  <!-- reset css -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css">
+  <!-- google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+  <!-- google icon -->
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+  <link rel="stylesheet" href="css/main.css">
+
+  <!-- ScrollMagic -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js" integrity="sha512-8E3KZoPoZCD+1dgfqhPbejQBnQfBXe8FuwL4z/c8sTrgeDMFEnoyTlH3obB4/fV+6Sg0a0XF+L/6xS4Xx1fUEg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script defer src="js/main.js"></script>
+</head>
+
+<body>
+  <!-- CURSOR -->
+  <!-- <div class="cursor">
+    <img src="images/cursor.png" alt="마우스 커서">
+  </div> -->
+  <!-- CURSOR -->
+  <!-- HEADER -->
+  <header>
+    <div class="inner">
+      <a href="index.html" class="logo">
+        <img src="images/logo.png" alt="로고">
+      </a>
+      <div class="center">
+        <div class="bar"></div>
+      </div>
+      <nav>
+        <ul class="font-en">
+          <li onclick="goTo('#about')"><span>About</span></li>
+          <li onclick="goTo('#skill')"><span>Skill</span></li>
+          <li onclick="goTo('#archive')"><span>Archive</span></li>
+          <li onclick="goTo('#project')"><span>Project</span></li>
+          <li onclick="goTo('#contact')"><span>Contact</span></li>
+        </ul>
+      </nav>
+      <div class="btn-hamburger">
+        <span class="material-symbols-outlined">menu</span>
+      </div>
+    </div>
+  </header>
+  <!-- HEADER -->
+  <!-- INTRO -->
+  <section class="intro">
+    <div class="inner">
+      <h1 class="title">송성재<br>자바 / 스프링 부트캠프</h1>
+      <p>안녕하세요. <br>포트폴리오 연습 사이트 입니다.</p>
+      <div class="intro__btn" onclick="goTo('#about')">Next</div>
+      <div class="bg-right">&copy Wallpaper Designed by <a href="https://freepik.com" target="_blank">Freepik</a></div>
+    </div>
+  </section>
+  <!-- INTRO -->
+  <!-- ABOUT -->
+  <section id="about" class="about">
+    <div class="inner">
+      <div class="title-box">
+        <h1 class="title font-en">About Me</h1>
+      </div>
+      <div class="profile-box content-box">
+        <div class="profile-image">
+          <img src="images/profile.png" alt="프로필">
+        </div>
+        <div class="profile-text ">
+          <h2>
+            <span>백</span>
+            <span>엔</span>
+            <span>드 </span>
+            <span>개</span>
+            <span>발</span>
+            <span>자</span>
+            <span>를 </span>
+            <span>목</span>
+            <span>표</span>
+            <span>로!</span>
+          </h2>
+          <h3>Song Sungjae</h3>
+          <h4>Education</h4>
+          <ul>
+            <li>10.03 ~ 12.02 00학교 00과 졸업</li>
+            <li>25.04 ~ 25.10 클라우드(AWS)활용 자바/스프링 개발 부트캠프 수료</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ABOUT -->
+  <!-- SKILL -->
+  <section id="skill" class="skill scroll-spy">
+    <div class="inner">
+      <div class="title-box">
+        <h1 class="title font-en">Skills</h1>
+      </div>
+      <div class="skill-box font-en content-box">
+        <ul>
+          <li>
+            <div class="category">Language</div>
+            <div class="details">
+              <ul>
+                <li style="transition-delay: 100ms;">C++</li>
+                <li style="transition-delay: 500ms;">Python</li>
+                <li style="transition-delay: 350ms;">Java</li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <div class="category">Frontend</div>
+            <div class="details">
+              <ul>
+                <li style="transition-delay: 400ms;">HTML</li>
+                <li style="transition-delay: 300ms;">CSS</li>
+                <li style="transition-delay: 200ms;">JavaScript</li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <div class="category">Backend</div>
+            <div class="details">
+              <ul>
+                <li style="transition-delay: 450ms;">Spring</li>
+                <li style="transition-delay: 150ms;">Spring Boot</li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <div class="category">Dev Ops</div>
+            <div class="details">
+              <ul>
+                <li style="transition-delay: 250ms;">AWS</li>
+                <li>Docker</li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+  <!-- SKILL -->
+  <!-- ARCHIVE -->
+  <section id="archive" class="archive">
+    <div class="inner">
+      <div class="title-box">
+        <h1 class="title font-en">Archive</h1>
+      </div>
+      <div class="git-box content-box">
+        <a class="git-link" href="https://github.com/A1ueo/frontend-study" target="_blank">
+          <div class="git-icon font-en">
+            <img src="images/git.png" alt="깃허브 아이콘">
+            <div>GitHub</div>
+          </div>
+          <div class="git-text font-en">
+            https://github.com/A1ueo/frontend-study
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+  <!-- ARCHIVE -->
+  <!-- PROJECT -->
+  <section id="project" class="project scroll-spy">
+    <div class="inner">
+      <div class="title-box">
+        <h1 class="title font-en">Projects</h1>
+      </div>
+
+      <div class="proj__box content-box">
+        <div class="proj__unit shake">
+          <div class="proj__title box-hover">프로젝트 제목</div>
+          <div class="proj__term">0000.00 (팀 프로젝트)</div>
+          <div class="proj__content">
+            <h3>전체 요약</h3>
+            <ul>
+              <li>세부 요약</li>
+              <li>세부 요약</li>
+              <li>세부 요약</li>
+            </ul>
+          </div>
+        </div>
+        <div class="proj__unit shake">
+          <div class="proj__title box-hover">프로젝트 제목</div>
+          <div class="proj__term">0000.00 (개인 프로젝트)</div>
+          <div class="proj__content">
+            <h3>전체 요약</h3>
+            <ul>
+              <li>세부 요약</li>
+              <li>세부 요약</li>
+              <li>세부 요약</li>
+            </ul>
+          </div>
+        </div>
+        <div class="proj__unit shake">
+          <div class="proj__title box-hover">프로젝트 제목</div>
+          <div class="proj__term">0000.00 (개인 프로젝트)</div>
+          <div class="proj__content">
+            <h3>전체 요약</h3>
+            <ul>
+              <li>세부 요약</li>
+              <li>세부 요약</li>
+              <li>세부 요약</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="ocean">
+        <div class="wave"></div>
+        <div class="wave"></div>
+      </div>
+    </div>
+  </section>
+  <!-- PROJECT -->
+  <!-- CONTACT -->
+  <section id="contact" class="contact font-en scroll-spy">
+    <div class="inner font-en">
+      <div class="title-box">
+        <h1 class="title">Contact</h1>
+      </div>
+      <div class="contact__info">
+        <ul>
+          <li>ligerssj@naver.com</li>
+          <li>010-0000-0000</li>
+          <li>blog.naver.com</li>
+        </ul>
+      </div>
+      <div class="contact__sns">
+        <ul>
+          <li><a href="https://blog.naver.com" target="_blank"><img src="images/icon_blog.png" alt="블로그"></a></li>
+          <li><a href="https://www.youtube.com" target="_blank"><img src="images/icon_youtube.png" alt="유튜브"></a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <!-- CONTACT -->
+  <!-- FOOTER -->
+  <footer>
+    <div class="inner font-en">
+      <p class="appreciate">
+        <span class="this-year"></span>
+        <span class="font-en">SJ SONG. Thank You For Visiting.</span>
+      </p>
+    </div>
+  </footer>
+  <!-- FOOTER -->
+  <!-- SCROLL TO TOP -->
+  <div id="to-top" class="box-hover">
+    <a href="#">
+      <span class="material-symbols-outlined">arrow_upward</span>
+    </a>
+  </div>
+  <!-- SCROLL TO TOP -->
+
+
+</body>
+
+</html>
