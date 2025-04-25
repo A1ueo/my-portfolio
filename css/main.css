@@ -645,6 +645,7 @@ footer .appreciate {
         transition: 1000ms;
         overflow: hidden;
         box-shadow: 5px 5px 20px #000;
+        z-index: 99;
     }
 
     header.active {
